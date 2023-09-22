@@ -7,6 +7,9 @@ const store = useDeliveringStore()
 let message = ref('')
 
 function sendComment() {
+  if (message.value?.length == 0) {
+    return
+  }
   store.sendComment(123, 'student', message.value)
   message.value = ''
 }
