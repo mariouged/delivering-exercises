@@ -16,7 +16,7 @@ You can see a real runing app in
 
 Also you can run the app in local + dev
 ```
-git clone
+git clone https://github.com/mariouged/delivering-exercises.git
 cd delivering-exercises
 npm install
 npm run dev
