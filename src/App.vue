@@ -6,11 +6,13 @@ const store = useDeliveringStore()
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline p-2">
-    Delivering exercises - isEazy
-  </h1>
-  <button @click="store.switchModal()" class=" bg-blue-700 text-white p-2 rounded">
-    Open Delivering
-  </button>
+  <div class="text-center">
+    <h1 class="text-3xl font-bold p-2">
+      Delivering exercises - isEazy
+    </h1>
+    <button @click="store.switchModal()" class="bg-blue-700 text-white p-2 rounded">
+      Open Delivering
+    </button>
+  </div>
   <DeliveringModal />
 </template>

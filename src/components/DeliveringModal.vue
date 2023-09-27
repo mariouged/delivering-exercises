@@ -8,7 +8,7 @@ const store = useDeliveringStore()
 
 <template>
   <div 
-    class="absolute top-0 left-0 bg-slate-100 p-12 w-full max-w-full h-screen max-h-screen font-sans"
+    class="absolute top-0 left-0 bg-neutral-600 p-12 w-full max-w-full h-screen max-h-screen font-sans"
     :class="{ visible: store.isOpenModal, invisible: !store.isOpenModal }"
   >
     <div class="modal-content border-2 border-solid border-red-500 rounded bg-white">
