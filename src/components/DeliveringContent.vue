@@ -17,7 +17,7 @@ onMounted(async () => {
       <DeliveringItem :delivering="delivering" />
     </div>
     <hr class="divide-y-8 divide-solid divide-black" />
-    <div>
+    <div class="py-8">
       <CommentInput />
     </div>
   </div>
