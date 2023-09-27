@@ -1,6 +1,6 @@
 <script setup>
 import { defineProps } from 'vue'
-import { formatDate } from '../commons/formatDate'
+import { spanishDate } from '../commons/spanishDate'
 
 const props = defineProps({
   delivering: Object,
@@ -20,7 +20,7 @@ function downloadDocument(download_url) {
       <div class="flex flex-row">
         <div class="basis-32">{{ delivering.type }}</div>
         <div class="basis-24">({{ delivering.size }} MB)</div>
-        <div class="basis-36">{{ formatDate(delivering.delivery_date) }}</div>
+        <div class="basis-36">{{ spanishDate(delivering.delivery_date) }}</div>
       </div>
     </div>
     <div class="basis-12 pt-6">

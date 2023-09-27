@@ -1,5 +1,5 @@
 <script setup>
-import { formatDate } from '../commons/formatDate'
+import { spanishDate } from '../commons/spanishDate'
 
 const props = defineProps({
   comment: Object,
@@ -13,7 +13,7 @@ const props = defineProps({
         <div class="basis-11/12">
           <div class="p-4 bg-blue-500 w-auto text-white comment-student-bag">
             <p>{{ comment.message }}</p>
-            <p class="text-xs">{{ formatDate(comment.comment_date) }}</p>
+            <p class="text-xs">{{ spanishDate(comment.comment_date) }}</p>
           </div>
         </div>
         <div class="basis-12 pt-6">
